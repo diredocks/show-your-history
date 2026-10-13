@@ -1,6 +1,6 @@
 {
   "name": "show-your-history",
-  "description": "Restore the missing history button in Chrome.",
+  "description": "Restore the missing history button in Chrome",
   "private": true,
   "version": "0.0.1",
   "type": "module",
