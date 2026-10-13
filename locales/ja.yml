@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: Chrome に欠けている履歴ボタンを復元します
+
+recentlyClosedTabs: 最近閉じたタブ
+recentlyClosedWindows: 最近閉じたウィンドウ
+searchHistory: 履歴を検索
+restorePreviousSession: 前回のセッションを復元
+clearRecentHistory: 最近の履歴を消去…
+recentHistory: 最近の履歴
+manageHistory: 履歴を管理
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: 閲覧データを消去
+when: "期間："
+rangeHour: 過去 1 時間
+rangeTwoHours: 過去 2 時間
+rangeFourHours: 過去 4 時間
+rangeToday: 今日 0:00 以降
+rangeAll: すべて
+clearWarningAll: すべての履歴が消去されます。この操作は元に戻せません。
+clearWarningRange: 選択した期間の閲覧データが消去されます。この操作は元に戻せません。
+clearHistory: 閲覧履歴とダウンロード履歴
+clearHistoryDesc: サイトとダウンロードの履歴を消去します
+clearCookies: Cookie とサイトデータ
+clearCookiesDesc: サイトからログアウトされたり、カートが空になることがあります
+clearCache: キャッシュされた画像とファイル
+clearCacheDesc: サイトの読み込みを速くする項目を消去します
+clearForms: 保存されたフォーム情報
+clearFormsDesc: フォームに入力した名前やメールアドレスなどを消去します
+
+cancel: キャンセル
+clear: 消去
+
+back: 戻る
+searchPlaceholder: 履歴を検索
+loading: 読み込み中…
+empty: 履歴が見つかりません
+closedTabsEmpty: 最近閉じたタブはありません
+closedWindowsEmpty: 最近閉じたウィンドウはありません
+
+tabCount:
+  1: 1 個のタブ
+  n: $1 個のタブ

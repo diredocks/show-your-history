@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: Ripristina il pulsante della cronologia mancante in Chrome.
+
+recentlyClosedTabs: Schede chiuse di recente
+recentlyClosedWindows: Finestre chiuse di recente
+searchHistory: Cerca nella cronologia
+restorePreviousSession: Ripristina sessione precedente
+clearRecentHistory: Cancella cronologia recente…
+recentHistory: Cronologia recente
+manageHistory: Gestisci cronologia
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: Cancella dati di navigazione
+when: "Periodo:"
+rangeHour: Ultima ora
+rangeTwoHours: Ultime 2 ore
+rangeFourHours: Ultime 4 ore
+rangeToday: Dalle 00:00
+rangeAll: Tutto
+clearWarningAll: Verrà cancellata tutta la cronologia. Questa azione non può essere annullata.
+clearWarningRange: Verranno cancellati i dati di navigazione del periodo selezionato. Questa azione non può essere annullata.
+clearHistory: Cronologia di navigazione e download
+clearHistoryDesc: Cancella la cronologia dei siti e dei download
+clearCookies: Cookie e dati dei siti
+clearCookiesDesc: Potresti essere disconnesso dai siti o svuotare i carrelli
+clearCache: File e pagine memorizzati nella cache
+clearCacheDesc: Cancella gli elementi che velocizzano il caricamento dei siti
+clearForms: Informazioni sui moduli salvate
+clearFormsDesc: Cancella nomi, email e altri dati inseriti nei moduli
+
+cancel: Annulla
+clear: Cancella
+
+back: Indietro
+searchPlaceholder: Cerca nella cronologia
+loading: Caricamento…
+empty: Nessuna cronologia trovata
+closedTabsEmpty: Nessuna scheda chiusa di recente
+closedWindowsEmpty: Nessuna finestra chiusa di recente
+
+tabCount:
+  1: 1 scheda
+  n: $1 schede

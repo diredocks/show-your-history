@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: Восстанавливает отсутствующую кнопку истории в Chrome.
+
+recentlyClosedTabs: Недавно закрытые вкладки
+recentlyClosedWindows: Недавно закрытые окна
+searchHistory: Поиск в истории
+restorePreviousSession: Восстановить предыдущий сеанс
+clearRecentHistory: Очистить недавнюю историю…
+recentHistory: Недавняя история
+manageHistory: Управление историей
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: Очистить данные о просмотрах
+when: "За:"
+rangeHour: Последний час
+rangeTwoHours: Последние 2 часа
+rangeFourHours: Последние 4 часа
+rangeToday: С 00:00
+rangeAll: За всё время
+clearWarningAll: Вся история будет очищена. Это действие нельзя отменить.
+clearWarningRange: Данные о просмотрах за выбранный период будут очищены. Это действие нельзя отменить.
+clearHistory: История просмотров и загрузок
+clearHistoryDesc: Очищает историю сайтов и загрузок
+clearCookies: Файлы cookie и данные сайтов
+clearCookiesDesc: Может выйти из аккаунтов на сайтах или очистить корзины покупок
+clearCache: Временные кэшированные файлы и страницы
+clearCacheDesc: Очищает элементы, ускоряющие загрузку сайтов
+clearForms: Сохранённые данные форм
+clearFormsDesc: Очищает имена, адреса эл. почты и другие данные, вводимые в формы
+
+cancel: Отмена
+clear: Очистить
+
+back: Назад
+searchPlaceholder: Поиск в истории
+loading: Загрузка…
+empty: История не найдена
+closedTabsEmpty: Нет недавно закрытых вкладок
+closedWindowsEmpty: Нет недавно закрытых окон
+
+tabCount:
+  1: 1 вкладка
+  n: $1 вкладок

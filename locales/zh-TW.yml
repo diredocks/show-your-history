@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: 補全 Chrome 中缺失的歷史記錄按鈕
+
+recentlyClosedTabs: 最近關閉的分頁
+recentlyClosedWindows: 最近關閉的視窗
+searchHistory: 搜尋歷史記錄
+restorePreviousSession: 還原上一個工作階段
+clearRecentHistory: 清除最近的歷史記錄…
+recentHistory: 最近的歷史記錄
+manageHistory: 管理歷史記錄
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: 清除瀏覽資料
+when: "時間範圍："
+rangeHour: 過去 1 小時
+rangeTwoHours: 過去 2 小時
+rangeFourHours: 過去 4 小時
+rangeToday: 從今天 00:00 起
+rangeAll: 全部時間
+clearWarningAll: 將清除所有瀏覽資料。此操作無法復原。
+clearWarningRange: 將清除所選時間範圍內的瀏覽資料。此操作無法復原。
+clearHistory: 瀏覽與下載記錄
+clearHistoryDesc: 清除網站造訪與下載記錄
+clearCookies: Cookie 與網站資料
+clearCookiesDesc: 可能會使你登出網站或清空購物車
+clearCache: 快取的圖片與檔案
+clearCacheDesc: 清除有助於網站快速載入的內容
+clearForms: 儲存的表單資訊
+clearFormsDesc: 清除你在表單中輸入的名稱、電子郵件等資訊
+
+cancel: 取消
+clear: 清除
+
+back: 返回
+searchPlaceholder: 搜尋歷史記錄
+loading: 載入中…
+empty: 找不到歷史記錄
+closedTabsEmpty: 沒有最近關閉的分頁
+closedWindowsEmpty: 沒有最近關閉的視窗
+
+tabCount:
+  1: 1 個分頁
+  n: $1 個分頁

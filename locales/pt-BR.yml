@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: Restaura o botão de histórico ausente no Chrome.
+
+recentlyClosedTabs: Abas fechadas recentemente
+recentlyClosedWindows: Janelas fechadas recentemente
+searchHistory: Pesquisar no histórico
+restorePreviousSession: Restaurar sessão anterior
+clearRecentHistory: Limpar histórico recente…
+recentHistory: Histórico recente
+manageHistory: Gerenciar histórico
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: Limpar dados de navegação
+when: "Período:"
+rangeHour: Última hora
+rangeTwoHours: Últimas 2 horas
+rangeFourHours: Últimas 4 horas
+rangeToday: Desde 00:00
+rangeAll: Todo o período
+clearWarningAll: Todo o histórico será limpo. Esta ação não pode ser desfeita.
+clearWarningRange: Os dados de navegação do período selecionado serão limpos. Esta ação não pode ser desfeita.
+clearHistory: Histórico de navegação e downloads
+clearHistoryDesc: Limpa o histórico de sites e downloads
+clearCookies: Cookies e dados de sites
+clearCookiesDesc: Pode desconectar você de sites ou esvaziar carrinhos de compras
+clearCache: Arquivos e páginas em cache
+clearCacheDesc: Limpa itens que ajudam os sites a carregar mais rápido
+clearForms: Informações de formulários salvas
+clearFormsDesc: Limpa nomes, e-mails e outros itens que você insere em formulários
+
+cancel: Cancelar
+clear: Limpar
+
+back: Voltar
+searchPlaceholder: Pesquisar no histórico
+loading: Carregando…
+empty: Nenhum histórico encontrado
+closedTabsEmpty: Nenhuma aba fechada recentemente
+closedWindowsEmpty: Nenhuma janela fechada recentemente
+
+tabCount:
+  1: 1 aba
+  n: $1 abas

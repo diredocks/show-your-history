@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: Stellt die fehlende Verlaufsschaltfläche in Chrome wieder her.
+
+recentlyClosedTabs: Kürzlich geschlossene Tabs
+recentlyClosedWindows: Kürzlich geschlossene Fenster
+searchHistory: Verlauf durchsuchen
+restorePreviousSession: Vorherige Sitzung wiederherstellen
+clearRecentHistory: Neueren Verlauf löschen…
+recentHistory: Neuerer Verlauf
+manageHistory: Verlauf verwalten
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: Browserdaten löschen
+when: "Zeitraum:"
+rangeHour: Letzte Stunde
+rangeTwoHours: Letzte 2 Stunden
+rangeFourHours: Letzte 4 Stunden
+rangeToday: Seit 00:00 Uhr
+rangeAll: Gesamter Zeitraum
+clearWarningAll: Der gesamte Verlauf wird gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.
+clearWarningRange: Browsing-Daten aus dem ausgewählten Zeitraum werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.
+clearHistory: Browser- und Downloadverlauf
+clearHistoryDesc: Löscht Website- und Downloadverlauf
+clearCookies: Cookies und Website-Daten
+clearCookiesDesc: Möglicherweise wirst du von Websites abgemeldet oder Warenkörbe werden geleert
+clearCache: Temporär zwischengespeicherte Dateien und Seiten
+clearCacheDesc: Löscht Elemente, die Websites schneller laden lassen
+clearForms: Gespeicherte Formularinformationen
+clearFormsDesc: Löscht z. B. Namen, E-Mail-Adressen und andere Formulareingaben
+
+cancel: Abbrechen
+clear: Löschen
+
+back: Zurück
+searchPlaceholder: Verlauf durchsuchen
+loading: Wird geladen…
+empty: Kein Verlauf gefunden
+closedTabsEmpty: Keine kürzlich geschlossenen Tabs
+closedWindowsEmpty: Keine kürzlich geschlossenen Fenster
+
+tabCount:
+  1: 1 Tab
+  n: $1 Tabs
