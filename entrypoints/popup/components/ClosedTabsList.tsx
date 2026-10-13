@@ -13,10 +13,17 @@ export default function ClosedTabsList(props: ClosedTabsListProps) {
       <For each={props.entries}>
         {(entry) => (
           <li class="item">
-            <button class="item__main" onClick={() => props.onRestore(entry.sessionId)}>
+            <a
+              class="item__main"
+              href={entry.url}
+              onClick={(e) => {
+                e.preventDefault();
+                props.onRestore(entry.sessionId);
+              }}
+            >
               <Favicon url={entry.url} />
               <span class="item__title">{entry.title}</span>
-            </button>
+            </a>
           </li>
         )}
       </For>
