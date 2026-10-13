@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: 补全 Chrome 中缺失的历史按钮
+
+recentlyClosedTabs: 最近关闭的标签页
+recentlyClosedWindows: 最近关闭的窗口
+searchHistory: 搜索历史记录
+restorePreviousSession: 恢复上次会话
+clearRecentHistory: 清除最近的历史记录…
+recentHistory: 最近的历史记录
+manageHistory: 管理历史记录
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: 清除浏览数据
+when: "时间范围："
+rangeHour: 过去 1 小时
+rangeTwoHours: 过去 2 小时
+rangeFourHours: 过去 4 小时
+rangeToday: 从今天 00:00 起
+rangeAll: 全部时间
+clearWarningAll: 将清除全部浏览数据。此操作无法撤消。
+clearWarningRange: 将清除所选时间范围内的浏览数据。此操作无法撤销。
+clearHistory: 浏览和下载记录
+clearHistoryDesc: 清除网站访问和下载记录
+clearCookies: Cookie 及其他网站数据
+clearCookiesDesc: 可能会使你退出网站登录或清空购物车
+clearCache: 缓存的图片和文件
+clearCacheDesc: 清除有助于网站快速加载的缓存内容
+clearForms: 保存的表单信息
+clearFormsDesc: 清除你在表单中输入的名字、邮箱等基本信息
+
+cancel: 取消
+clear: 清除
+
+back: 返回
+searchPlaceholder: 搜索历史记录
+loading: 正在加载…
+empty: 没有找到历史记录
+closedTabsEmpty: 没有最近关闭的标签页
+closedWindowsEmpty: 没有最近关闭的窗口
+
+tabCount:
+  1: 1 个标签页
+  n: $1 个标签页

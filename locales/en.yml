@@ -1,0 +1,44 @@
+extensionName: Show your history
+extensionDescription: Restore the missing history button in Chrome.
+
+recentlyClosedTabs: Recently closed tabs
+recentlyClosedWindows: Recently closed windows
+searchHistory: Search history
+restorePreviousSession: Restore previous session
+clearRecentHistory: Clear recent history…
+recentHistory: Recent history
+manageHistory: Manage history
+manageHistoryShortcut: Ctrl+H
+manageHistoryShortcutMac: ⌘Y
+
+clearDataTitle: Clear browsing data
+when: "When:"
+rangeHour: Last hour
+rangeTwoHours: Last two hours
+rangeFourHours: Last four hours
+rangeToday: Since 00:00
+rangeAll: Everything
+clearWarningAll: All history will be cleared. This action cannot be undone.
+clearWarningRange: Browsing data from the selected time range will be cleared. This action cannot be undone.
+clearHistory: Browsing & download history
+clearHistoryDesc: Clears site and download history
+clearCookies: Cookies and site data
+clearCookiesDesc: May sign you out of sites or empty shopping carts
+clearCache: Temporary cached files and pages
+clearCacheDesc: Clears items that help sites load faster
+clearForms: Saved form info
+clearFormsDesc: Clears things like names, emails, and other items you enter in forms
+
+cancel: Cancel
+clear: Clear
+
+back: Back
+searchPlaceholder: Search history
+loading: Loading…
+empty: No history found
+closedTabsEmpty: No recently closed tabs
+closedWindowsEmpty: No recently closed windows
+
+tabCount:
+  1: 1 tab
+  n: $1 tabs
