@@ -1,4 +1,4 @@
-import { createEffect, createSignal, onCleanup, onMount, Show } from 'solid-js';
+import { createEffect, createResource, createSignal, onCleanup, Show } from 'solid-js';
 import { i18n } from '#i18n';
 import ClearDataView, { type ClearSelection } from './components/ClearDataView';
 import ClosedTabsList from './components/ClosedTabsList';
@@ -22,53 +22,36 @@ import { applyActionIcon, watchColorScheme } from './lib/theme';
 import './App.css';
 
 type Subview = 'closedTabs' | 'closedWindows' | 'search' | 'clearData';
-type View = 'main' | Subview;
 
 export default function App() {
-  const [view, setView] = createSignal<View>('main');
   const [subview, setSubview] = createSignal<Subview | null>(null);
-  const [recent, setRecent] = createSignal<HistoryEntry[]>([]);
-  const [closedTabs, setClosedTabs] = createSignal<ClosedTab[]>([]);
-  const [closedWindows, setClosedWindows] = createSignal<ClosedWindow[]>([]);
-  const [results, setResults] = createSignal<HistoryEntry[]>([]);
-  const [query, setQuery] = createSignal('');
-  const [loading, setLoading] = createSignal(true);
-
-  async function loadRecent() {
-    setLoading(true);
-    try {
-      setRecent(await getRecentHistory());
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  async function loadClosed() {
+  const view = () => subview() ?? 'main';
+  const [recent, { refetch: refetchRecent }] = createResource(() => getRecentHistory());
+  const [closed, { refetch: refetchClosed }] = createResource(async () => {
     const [tabs, windows] = await Promise.all([
       getRecentlyClosedTabs().catch(() => [] as ClosedTab[]),
       getRecentlyClosedWindows().catch(() => [] as ClosedWindow[]),
     ]);
-    setClosedTabs(tabs);
-    setClosedWindows(windows);
-  }
-
-  onMount(() => {
-    loadRecent();
-    loadClosed();
+    return { tabs, windows };
   });
+  const closedTabs = () => closed()?.tabs ?? [];
+  const closedWindows = () => closed()?.windows ?? [];
+  const [results, setResults] = createSignal<HistoryEntry[]>([]);
+  const [query, setQuery] = createSignal('');
 
   onCleanup(watchColorScheme(applyActionIcon));
 
   let debounce: ReturnType<typeof setTimeout> | undefined;
   createEffect(() => {
     const text = query();
-    const inSearch = view() === 'search';
+    const inSearch = subview() === 'search';
     clearTimeout(debounce);
     if (!inSearch) return;
     debounce = setTimeout(async () => {
       setResults(await searchHistory(text.trim()));
     }, text ? 150 : 0);
   });
+  onCleanup(() => clearTimeout(debounce));
 
   function open(url: string) {
     browser.tabs.create({ url });
@@ -77,12 +60,12 @@ export default function App() {
 
   function openSubview(next: Subview) {
     setSubview(next);
-    setView(next);
   }
 
   function backToMain() {
     setQuery('');
-    setView('main');
+    setResults([]);
+    setSubview(null);
   }
 
   async function restore(sessionId: string) {
@@ -112,7 +95,7 @@ export default function App() {
     if (selection.formData) dataToRemove.formData = true;
 
     await browser.browsingData.remove({ since: selection.since }, dataToRemove);
-    await Promise.all([loadRecent(), loadClosed()]);
+    await Promise.all([refetchRecent(), refetchClosed()]);
     backToMain();
   }
 
@@ -121,7 +104,8 @@ export default function App() {
     window.close();
   }
 
-  const hasClosedSessions = () => closedTabs().length > 0 || closedWindows().length > 0;
+  const hasClosedSessions = () =>
+    closedTabs().length > 0 || closedWindows().length > 0;
 
   return (
     <div class="panel">
@@ -164,8 +148,11 @@ export default function App() {
               <div class="menu-sep" />
 
               <div class="section-label">{i18n.t('recentHistory')}</div>
-              <Show when={recent().length > 0} fallback={<EmptyState loading={loading()} />}>
-                <HistoryList entries={recent()} onOpen={open} />
+              <Show
+                when={(recent()?.length ?? 0) > 0}
+                fallback={<EmptyState loading={recent.loading} />}
+              >
+                <HistoryList entries={recent() ?? []} onOpen={open} />
               </Show>
             </div>
 
